@@ -1,0 +1,19 @@
+{
+    "rust-analyzer.enable": true,
+    "rust-analyzer.checkOnSave": true,
+    "rust-analyzer.cargo.buildScripts.enable": true,
+    "rust-analyzer.procMacro.enable": true,
+    "rust-analyzer.diagnostics.enable": true,
+    "rust-analyzer.completion.enable": true,
+    "rust-analyzer.hover.enable": true,
+    "rust-analyzer.lens.enable": true,
+    "rust-analyzer.inlayHints.enable": true,
+    "rust-analyzer.imports.prefix": "crate",
+    "rust-analyzer.server.path": "rust-analyzer",
+    "rust-analyzer.cargo.features": "all",
+    "rust-analyzer.diagnostics.disabled": [],
+    "rust-analyzer.diagnostics.warningsAsHint": [],
+    "rust-analyzer.diagnostics.warningsAsInfo": [],
+    "editor.formatOnSave": true,
+    "rust-analyzer.rustfmt.overrideCommand": null
+}
