@@ -27,7 +27,7 @@ fn bughunt() -> io::Result<()> {
 
     loop {
         if v == 1 {
-            locate(c as u16, d as u16, "└")?;
+            locate(c, d, "└")?;
         }
 
         if x == c && y == d && v == 1 {
@@ -95,39 +95,39 @@ fn bughunt() -> io::Result<()> {
         }
         clr_text()?;
 
-        locate(x as u16, y as u16, str1)?;
+        locate(x, y, str1)?;
 
         if g == "x" && v == 2 {
             if h == "Up" {
-                locate(x as u16, (y - 1) as u16, "↓")?;
+                locate(x, y - 1, "↓")?;
                 if a == x && b == y - 1 {
                     s = 1;
                 }
             }
 
             if h == "Right" {
-                locate((x + 1) as u16, y as u16, "←")?;
+                locate(x + 1, y, "←")?;
                 if a == x + 1 && b == y {
                     s = 1;
                 }
             }
 
             if h == "Left" {
-                locate((x - 1) as u16, y as u16, "→")?;
+                locate(x - 1, y, "→")?;
                 if a == x - 1 && b == y {
                     s = 1;
                 }
             }
 
             if h == "Down" {
-                locate(x as u16, (y + 1) as u16, "↑")?;
+                locate(x, y + 1, "↑")?;
                 if a == x && b == y + 1 {
                     s = 1;
                 }
             }
         }
 
-        locate(a as u16, b as u16, "¤")?;
+        locate(a, b, "¤")?;
 
         if x == a && y == b {
             k = 1;
